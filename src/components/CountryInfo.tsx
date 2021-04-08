@@ -2,13 +2,18 @@ import { Flex, SimpleGrid, Text } from '@chakra-ui/react';
 
 export const CountryInfo: React.FC = () => {
   return (
-    <SimpleGrid columns={2} spacing={40} px="40" py="50">
-      <Flex align="center">
+    <SimpleGrid
+      columns={[1, 1, 2]}
+      spacing={40}
+      px={[0, 0, 40]}
+      py={[0, 0, 50]}
+    >
+      <Flex align="center" m="5">
         <Text fontSize={24} fontWeight="normal" color="gray.600">
           A Europa é, por convenção, um dos seis continentes do mundo.
           Compreendendo a península ocidental da Eurásia, a Europa geralmente
           divide-se da Ásia a leste pela divisória de águas dos montes Urais, o
-          rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste
+          rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste.
         </Text>
       </Flex>
       <Flex justify="space-around" align="center">
