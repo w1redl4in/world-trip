@@ -7,7 +7,7 @@ import {
   Center,
   useMediaQuery,
 } from '@chakra-ui/react';
-import { Categories as CategoriesIcons } from '../constants/categories';
+import { CATEGORIES } from '../constants/categories';
 
 export const Categories = () => {
   const [isLargerThan1280] = useMediaQuery('(min-width: 1280px)');
@@ -21,7 +21,7 @@ export const Categories = () => {
         mt="20"
         flexWrap="wrap"
       >
-        {Object.entries(CategoriesIcons).map(([key, value]) => (
+        {Object.entries(CATEGORIES).map(([key, value]) => (
           <Stack key={key} textAlign="center">
             <Flex direction="column" align="center" justify="space-between">
               {isLargerThan1280 ? (

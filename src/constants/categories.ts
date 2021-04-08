@@ -1,4 +1,4 @@
-export const Categories = {
+export const CATEGORIES = {
   'vida noturna': {
     path: '/images/categories/drink.svg',
   },
