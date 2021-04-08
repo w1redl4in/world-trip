@@ -7,7 +7,8 @@ import {
   Center,
   useMediaQuery,
 } from '@chakra-ui/react';
-import { CATEGORIES } from '../constants/categories';
+import { CATEGORIES } from '../../constants/categories';
+import styles from '../../styles/categories.module.css';
 
 export const Categories = () => {
   const [isLargerThan1280] = useMediaQuery('(min-width: 1280px)');
@@ -32,11 +33,12 @@ export const Categories = () => {
                   </Text>
                 </>
               ) : (
-                <>
+                <Flex align="center" m="5">
+                  <div className={styles.dot} />
                   <Text fontWeight={600} color="gray.500">
                     {key}
                   </Text>
-                </>
+                </Flex>
               )}
             </Flex>
           </Stack>
