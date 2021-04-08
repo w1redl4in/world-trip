@@ -11,7 +11,13 @@ export const Carousel: React.FC = () => {
   };
 
   return (
-    <Flex as="section" justify="center" align="center" direction="column">
+    <Flex
+      as="section"
+      justify="center"
+      align="center"
+      direction="column"
+      textAlign="center"
+    >
       <Text fontSize={36} color="gray.600">
         Vamos nessa?
       </Text>
