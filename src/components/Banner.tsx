@@ -1,6 +1,8 @@
-import { Box, Flex, Text, Stack, Image } from '@chakra-ui/react';
+import { Box, Flex, Text, Stack, Image, useMediaQuery } from '@chakra-ui/react';
 
 export const Banner = () => {
+  const [isLargerThan1280] = useMediaQuery('(min-width: 1280px)');
+
   return (
     <Box
       backgroundImage="url('/images/banner.svg')"
@@ -26,13 +28,15 @@ export const Banner = () => {
             sonhou.
           </Text>
         </Stack>
-        <Image
-          src="/images/airplane.svg"
-          alt="airplane"
-          position="absolute"
-          right="64"
-          bottom="-10"
-        />
+        {isLargerThan1280 && (
+          <Image
+            src="/images/airplane.svg"
+            alt="airplane"
+            position="absolute"
+            right="64"
+            bottom="-10"
+          />
+        )}
       </Flex>
     </Box>
   );
