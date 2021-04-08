@@ -1,3 +1,11 @@
+import { Country } from '../components/Country';
+import { CountryInfo } from '../components/CountryInfo';
+
 export default function Europe() {
-  return <h1>Europe</h1>;
+  return (
+    <>
+      <Country />
+      <CountryInfo />
+    </>
+  );
 }
