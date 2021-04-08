@@ -17,7 +17,7 @@ export const Header = () => {
       {history.pathname !== '/' && (
         <Box
           position="absolute"
-          left="20"
+          left="10"
           _hover={{
             cursor: 'pointer',
           }}
