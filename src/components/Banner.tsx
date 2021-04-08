@@ -15,12 +15,16 @@ export const Banner = () => {
         as="div"
         justify="center"
         h="100%"
-        ml="36"
+        ml={[5, 36]}
         direction="column"
         position="relative"
       >
         <Stack>
-          <Text color="gray.100" fontSize="3xl" fontWeight={500}>
+          <Text
+            color="gray.100"
+            fontSize={['sm', 'sm', '3xl']}
+            fontWeight={500}
+          >
             5 Continentes, <br /> Infinitas possibilidades.
           </Text>
           <Text fontSize="md" color="gray.100" fontWeight={400}>
