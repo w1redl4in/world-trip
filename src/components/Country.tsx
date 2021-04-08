@@ -5,18 +5,21 @@ export const Country: React.FC = () => {
     <Box
       position="relative"
       backgroundImage="url('/images/countries/europe.svg')"
-      backgroundPosition="center"
+      backgroundPosition="left"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
-      h="550"
+      maxWidth="100%"
+      width="100%"
+      height="500"
     >
       <Text
         position="absolute"
-        bottom="20"
-        left="60"
+        bottom={[0, 0, 20]}
+        left={[0, 0, 60]}
         fontWeight={600}
-        fontSize={48}
+        fontSize="3xl"
         color="gray.100"
+        p="1"
       >
         Europe
       </Text>
