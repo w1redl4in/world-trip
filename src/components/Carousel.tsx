@@ -26,18 +26,33 @@ export const Carousel: React.FC = () => {
       </Text>
       <Box maxWidth="800" mt="8">
         <ReactResponsiveCarousel renderThumbs={() => []}>
-          <div onClick={handleRoute}>
+          <Box
+            onClick={handleRoute}
+            _hover={{
+              cursor: 'pointer',
+            }}
+          >
             <img src="/images/carousel/europe.svg" alt="europe svg" />
             <p className="legend">Europe</p>
-          </div>
-          <div onClick={handleRoute}>
+          </Box>
+          <Box
+            onClick={handleRoute}
+            _hover={{
+              cursor: 'pointer',
+            }}
+          >
             <img src="/images/carousel/europe.svg" alt="europe svg" />
             <p className="legend">Europe</p>
-          </div>
-          <div onClick={handleRoute}>
+          </Box>
+          <Box
+            onClick={handleRoute}
+            _hover={{
+              cursor: 'pointer',
+            }}
+          >
             <img src="/images/carousel/europe.svg" alt="europe svg" />
             <p className="legend">Europe</p>
-          </div>
+          </Box>
         </ReactResponsiveCarousel>
       </Box>
     </Flex>
