@@ -6,7 +6,7 @@ export const Banner = () => {
   return (
     <Box
       backgroundImage="url('/images/banner.svg')"
-      h="268"
+      h="168"
       backgroundPosition="center"
       backgroundRepeat="no-repeat"
       backgroundSize="cover"
